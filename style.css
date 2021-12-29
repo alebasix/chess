@@ -1,0 +1,17 @@
+* { box-sizing: border-box;
+}
+
+body {
+  margin: 0em;
+  padding: 0em;
+}
+
+article {
+  display: inline-block;
+}
+
+em {
+  margin: 0px;
+  padding: 10px;
+  border: 5px solid;
+}
