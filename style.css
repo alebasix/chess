@@ -7,30 +7,27 @@ body {
   background-color: wheat;
 }
 
-article {
-  display: block;
+article div{
+  display: inline-block;
 }
 
 div {
   margin: -2px;
-  padding: -2px;
-  border: 0px solid black;
   height: 100px;
   width: 100px;
 } 
-article>div:nth-child(1n+1) { 
-   display: inline-block;
-  }
-  article div:nth-child(2n+1)
-  {
+
+  article section:nth-child(odd) div:nth-child(2n +1)
+  article section:nth-child(even)  div:nth-child(2n) {
     background-color: black;
     /* border: 1px solid white; */
     background-image: url(./chess-deck-black.jpeg);
-    background-size: cover;
+    background-size: cover; 
   }
-  article div:nth-child(2n)
-  {
-    background-color: white;
+  
+  article section:nth-child(odd) div:nth-child(2n)
+  article section:nth-child(even)  div:nth-child(2n+1) {
+    background-color: white; 
     /* border: 1px solid black; */
     background-image: url(./chess-deck-white.jpeg);
     background-size: cover;
